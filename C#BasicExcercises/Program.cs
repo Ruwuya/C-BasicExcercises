@@ -2,6 +2,10 @@
 using C_BasicExcercises.Exercises.Exercise_11_20;
 using C_BasicExcercises.Exercises.Exercise11_20;
 using C_BasicExcercises.Exercises.Exercise21_30;
+using C_BasicExcercises.Exercises.Exercise31_40;
+using C_BasicExcercises.Exercises.Exercise41_50;
+using C_BasicExcercises.Exercises.Exercise51_60;
+using C_BasicExcercises.Exercises.Exercise61_62;
 
 namespace C_BasicExcercises
 {
@@ -38,6 +42,43 @@ namespace C_BasicExcercises
             Console.WriteLine("24. Exercise 24 - Find Longest Word in String");
             Console.WriteLine("25. Exercise 25 - Print Odd Numbers 1 - 99");
             Console.WriteLine("26. Exercise 26 - Sum of First 500 Primes");
+            Console.WriteLine("27. Exercise 27 - Sum of Digits in an Integer");
+            Console.WriteLine("28. Exercise 28 - Reverse Words in a String");
+            Console.WriteLine("29. Exercise 29 - File Size in Bytes");
+            Console.WriteLine("30. Exercise 30 - Hexadecimal to Decimal");
+            Console.WriteLine("31. Exercise 31 - Multiply Two Arrays");
+            Console.WriteLine("32. Exercise 32 - Four Copies of Last Four Characters");
+            Console.WriteLine("33. Exercise 33 - Check Multiple of 3 or 7");
+            Console.WriteLine("34. Exercise 34 - Check String Starts with Word");
+            Console.WriteLine("35. Exercise 35 - Check Numbers Less than 100 & Greater than 200");
+            Console.WriteLine("36. Exercise 36 - Check Integer in Range -10 to 10");
+            Console.WriteLine("37. Exercise 37 - Remove 'HP' from String");
+            Console.WriteLine("38. Exercise 38 - Extract 'PH' from String");
+            Console.WriteLine("39. Exercise 39 - Largest and Lowest of Three Integers");
+            Console.WriteLine("40. Exercise 40 - Nearest to 20 or Return 0");
+            Console.WriteLine("41. Exercise 41 - Check 'W' Appears 1-3 times");
+            Console.WriteLine("42. Exercise 42 - First 4 Chars Lowercase, rest Uppercase");
+            Console.WriteLine("43. Exercise 43 - Check String Starts with 'www.'");
+            Console.WriteLine("44. Exercise 44 - Every Other Character in String");
+            Console.WriteLine("45. Exercise 45 - Count Specific Number in Array");
+            Console.WriteLine("46. Exercise 46 - Check Number First or Last in Array");
+            Console.WriteLine("47. Exercise 47 - Sum of Array Element");
+            Console.WriteLine("48. Exercise 48 - First and Last Element Equal in Array");
+            Console.WriteLine("49. Exercise 49 - First or Last Element Equal in Two Arrays");
+            Console.WriteLine("50. Exercise 50 - Rotate Array Left");
+            Console.WriteLine("51. Exercise 51 - Max of First and Last in Array");
+            Console.WriteLine("52. Exercise 52 - Middle Element of Array");
+            Console.WriteLine("53. Exercise 53 - Check Odd Number in Array");
+            Console.WriteLine("54. Exercise 54 - Find Century of Year");
+            Console.WriteLine("55. Exercise 55 - Max Product of Adjacent Elements in Array");
+            Console.WriteLine("56. Exercise 56 - Check Palindrome String");
+            Console.WriteLine("57. Exercise 57 - Max Product of Adjacent Integers in Array");
+            Console.WriteLine("58. Exercise 58 - Complete Missing Numbers in Range");
+            Console.WriteLine("59. Exercise 59 - Can Make Strictly Increasing Sequence");
+            Console.WriteLine("60. Exercise 60 - Sum of Matrix with Zero Condition");
+            Console.WriteLine("61. Exercise 61 - Sort Integers Keeping -5 Fixed");
+            Console.WriteLine("62. Exercise 62 - Reverse Strings in Parentheses");
+
 
             string? input = Console.ReadLine();
 
@@ -121,11 +162,116 @@ namespace C_BasicExcercises
                 case "26":
                     Exercise26.SumOfFirst500Primes();
                     break;
-
-
-
+                case "27":
+                    Exercise27.SumOfDigitsInt();
+                    break;
+                case "28":
+                    Exercise28.ReverseWordsInString();
+                    break;
+                case "29":
+                    Exercise29.FileSizeInBytes();
+                    break;
+                case "30":
+                    Exercise30.HexadecimalToDecimal();
+                    break;
+                case "31":
+                    Exercise31.MultiplyTwoArrays();
+                    break;
+                case "32":
+                    Exercise32.FourCopiesOfLastFourCharacters();
+                    break;
+                case "33":
+                    Exercise33.CheckMultipleOf3Or7();
+                    break;
+                case "34":
+                    Exercise34.CheckStringStartsWithWord();
+                    break;
+                case "35":
+                    Exercise35.CheckNumbersLessThan100AndGreaterThan200();
+                    break;
+                case "36":
+                    Exercise36.CheckIntegerInRangeMinus10To10();
+                    break;
+                case "37":
+                    Exercise37.RemoveHPFromString();
+                    break;
+                case "38":
+                    Exercise38.ExtractPHFromString();
+                    break;
+                case "39":
+                    Exercise39.FindLargestAndLowestFromThreeNumbers();
+                    break;
+                case "40":
+                    Exercise40.CheckNearestValueOf20();
+                    break;
+                case "41":
+                    Exercise41.CheckWAppears1To3Times();
+                    break;
+                case "42":
+                    Exercise42.First4CharsLowercaseLastUppercase();
+                    break;
+                case "43":
+                    Exercise43.CheckStringStartsWithWWW();
+                    break;
+                case "44":
+                    Exercise44.PrintEveryOtherCharacterFromString();
+                    break;
+                case "45":
+                    Exercise45.CountSpecificNumberInArray();
+                    break;
+                case "46":
+                    Exercise46.CheckNumberFirstOrLastInArray();
+                    break;
+                case "47":
+                    Exercise47.SumOfArrayElement();
+                    break;
+                case "48":
+                    Exercise48.FirstAndLastElementEqualInArray();
+                    break;
+                case "49":
+                    Exercise49.FirstOrLastElementEqualInTwoArrays();
+                    break;
+                case "50":
+                    Exercise50.RotateArrayLeft();
+                    break;
+                case "51":
+                    Exercise51.MaxOfFirstAndLastInArray();
+                    break;
+                case "52":
+                    Exercise52.MiddleElementOfArray();
+                    break;
+                case "53":
+                    Exercise53.CheckOddNumberInArray();
+                    break;
+                case "54":
+                    Exercise54.FindCenturyOfYear();
+                    break;
+                case "55":
+                    Exercise55.MaxProductOfAdjacentElements();
+                    break;
+                case "56":
+                    Exercise56.CheckPalindromeString();
+                    break;
+                case "57":
+                    Exercise57.MaxProductOfAdjacentIntegers();
+                    break;
+                case "58":
+                    Exercise58.CompleteMissingNumbersInRange();
+                    break;
+                case "59":
+                    Exercise59.CanMakeStrictlyIncreasingSequence();
+                    break;
+                case "60":
+                    Exercise60.SumOfMatrixWithZeroCondition();
+                    break;
+                case "61":
+                    Exercise61.SortIntegersKeepingFixed();
+                    break;
+                case "62":
+                    Exercise62.ReverseStringsInParentheses();
+                    break;
                 default:
-                    Console.WriteLine("Invalid choice");
+                    Console.WriteLine("Invalid choice, please pick between 1 - 62");
                     Console.ReadKey();
                     break;
             }

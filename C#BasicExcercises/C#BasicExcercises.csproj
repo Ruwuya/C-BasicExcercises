@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <None Remove="Program.cs~RF67408fa8.TMP" />
+    <None Remove="Program.cs~RF6bf5c50b.TMP" />
   </ItemGroup>
 
   <ItemGroup>
