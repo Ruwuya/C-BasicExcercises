@@ -16,8 +16,10 @@ namespace C_BasicExcercises.Exercises
             Console.WriteLine("Please enter a number to display its multiplication table:");
             int number = int.Parse(Console.ReadLine());
             Console.WriteLine($"Multiplication Table for {number}:");
+            // Display multiplication table from 0 to 10
             for (int i = 0; i <= 10; i++)
             {
+                // Calculate and display the result
                 int result = number * i;
                 Console.WriteLine($"{number} x {i} = {result}");
             }

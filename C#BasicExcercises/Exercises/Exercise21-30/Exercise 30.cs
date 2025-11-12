@@ -16,11 +16,14 @@ namespace C_BasicExcercises.Exercises.Exercise21_30
             Console.WriteLine("Hexadecimal to Decimal Conversion: ");
             Console.Write("Input a hexadecimal number: ");
             string hexInput = Console.ReadLine();
+            // Convert hex to decimal
             try
             {
-                int decimalValue = Convert.ToInt32(hexInput, 16); // Convert hex to decimal
+                // Converting hexadecimal to decimal then printing the result
+                int decimalValue = Convert.ToInt32(hexInput, 16);
                 Console.WriteLine($"The decimal value is: {decimalValue}");
             }
+            // Handling invalid hexadecimal input
             catch (FormatException)
             {
                 Console.WriteLine("Invalid hexadecimal number.");

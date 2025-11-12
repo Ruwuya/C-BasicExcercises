@@ -17,12 +17,14 @@ namespace C_BasicExcercises.Exercises.Exercise11_20
             string inputString = Console.ReadLine();
             Console.WriteLine("Please enter the index of the character to remove:");
             int index = int.Parse(Console.ReadLine());
+            // Validate index
             if (index < 0 || index >= inputString.Length)
             {
                 Console.WriteLine("Index is out of range.");
             }
             else
             {
+                // Remove character at the specified index
                 string resultString = inputString.Remove(index, 1);
                 Console.WriteLine("String after removing character: " + resultString);
             }

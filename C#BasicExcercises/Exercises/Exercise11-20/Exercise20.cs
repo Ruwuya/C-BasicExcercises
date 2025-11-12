@@ -18,13 +18,16 @@ namespace C_BasicExcercises.Exercises.Exercise11_20
             Console.WriteLine("Please enter the second number:");
             int secondNumber = int.Parse(Console.ReadLine());
             int difference = Math.Abs(firstNumber - secondNumber);
+            // Check if the first number is greater than the second number
             if (firstNumber > secondNumber)
             {
+                // Return double the absolute difference
                 Console.WriteLine("The first number is greater than the second number.");
                 Console.WriteLine("Double the absolute difference: " + (difference * 2));
             }
             else
             {
+                // Return the absolute difference
                 Console.WriteLine("The absolute difference: " + difference);
             }
         }

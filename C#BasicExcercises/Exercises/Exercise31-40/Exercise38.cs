@@ -15,11 +15,15 @@ namespace C_BasicExcercises.Exercises.Exercise31_40
             Console.WriteLine("Extract 'PH' from string: ");
             Console.Write("Input a string: ");
             string input = Console.ReadLine();
+
+            // Extract 'PH' from the input string
             if (input != null)
             {
+                // Using StringBuilder for efficient string manipulation
                 StringBuilder result = new StringBuilder();
                 for (int i = 0; i < input.Length - 1; i++)
                 {
+                    // Check for 'PH' sequence
                     if (input[i] == 'P' && input[i + 1] == 'H')
                     {
                         result.Append("PH");

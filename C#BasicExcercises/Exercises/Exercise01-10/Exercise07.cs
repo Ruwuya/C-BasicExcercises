@@ -19,12 +19,14 @@ namespace C_BasicExcercises.Exercises
             Console.WriteLine("Please enter the second number:");
             double secondNumber = double.Parse(Console.ReadLine());
 
+            // Performing the basic arithmetic operations
             double add = firstNumber + secondNumber;
             double substract = firstNumber - secondNumber;
             double multiply = firstNumber * secondNumber;
             double divide = firstNumber / secondNumber;
             double modulus = firstNumber % secondNumber;
 
+            // Displaying the results
             Console.WriteLine("The sum of adding the numbers is: " + firstNumber + " and " + secondNumber + " is: " + add);
             Console.WriteLine("The sum of substracting the numbers is: " + secondNumber + " is subtracted from " + firstNumber + " is: " + substract);
             Console.WriteLine("The sum of multiplying the numbers is:  " + firstNumber + " and " + secondNumber + " is: " + multiply);

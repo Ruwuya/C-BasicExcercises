@@ -1,4 +1,59 @@
-﻿using C_BasicExcercises.Exercises;
+﻿using System.Reflection;
+
+namespace C_BasicExcercises
+{
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Welcome to C# Basic Exercises!");
+            Console.WriteLine();
+
+            // Find all exercise methods automatically
+            // An exercise method is defined as a public static method
+            // in a class whose name starts with "Exercise" ffollowed by a number
+            var exerciseMethods = Assembly.GetExecutingAssembly()
+                .GetTypes()
+                .Where(t => t.IsClass && t.Name.StartsWith("Exercise"))
+                .SelectMany(t => t.GetMethods(BindingFlags.Public | BindingFlags.Static))
+                .Where(m => m.GetParameters().Length == 0 && m.ReturnType == typeof(void))
+                .OrderBy(m => m.DeclaringType!.Name)
+                .ToList();
+
+            // Display menu
+            for (int i = 0; i < exerciseMethods.Count; i++)
+            {
+                // Get class and method name from the static methods in "Exercise" classes
+                var typeName = exerciseMethods[i].DeclaringType!.Name;
+                var methodName = exerciseMethods[i].Name;
+                Console.WriteLine($"{i + 1}. {typeName} - {methodName}");
+            }
+
+            // Get user input for exercise selection
+            Console.WriteLine();
+            Console.Write("Enter exercise number: ");
+            string? input = Console.ReadLine();
+
+            // Invoke selected exercise method
+            if (int.TryParse(input, out int choice) &&
+                // Validate choice range based on discovered methods
+                choice >= 1 &&
+                choice <= exerciseMethods.Count)
+            {
+                // Clear console before running the exercise
+                Console.Clear();
+                exerciseMethods[choice - 1].Invoke(null, null);
+            }
+            // Invalid choice handling
+            else
+            {
+                Console.WriteLine("Invalid choice.");
+            }
+        }
+    }
+}
+/* Old Program.cs content:
+using C_BasicExcercises.Exercises;
 using C_BasicExcercises.Exercises.Exercise_11_20;
 using C_BasicExcercises.Exercises.Exercise11_20;
 using C_BasicExcercises.Exercises.Exercise21_30;
@@ -279,3 +334,4 @@ namespace C_BasicExcercises
         }
     }
 }
+*/

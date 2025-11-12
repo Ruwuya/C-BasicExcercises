@@ -15,8 +15,11 @@ namespace C_BasicExcercises.Exercises.Exercise31_40
             Console.WriteLine("Remove 'HP' from string: ");
             Console.Write("Input a string: ");
             string input = Console.ReadLine();
+
+            // Remove all occurrences of 'HP' of the given string
             if (input != null)
             {
+                // Using Replace method to remove 'HP'
                 string result = input.Replace("HP", "");
                 Console.WriteLine("Resulting string: " + result);
             }

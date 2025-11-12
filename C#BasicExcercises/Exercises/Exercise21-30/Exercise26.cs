@@ -36,11 +36,15 @@ namespace C_BasicExcercises.Exercises.Exercise21_30
         {
             int x = (int)Math.Sqrt(number);
 
+            // Check for edge cases
             if (number == 1) return false;
+            // 2 is the only even prime number
             if (number == 2) return true;
 
+            // Check for factors from 2 to the square root of the number
             for (int i = 2; i <= x; i++)
             {
+                // If number is divisible by i, it's not prime
                 if (number % i == 0)
                     return false;
             }

@@ -11,22 +11,27 @@ namespace C_BasicExcercises.Exercises.Exercise41_50
         // First 4 Chars lowercase but rest uppercase
         // if less than 4 characters, convert all to uppercase
         // example: w3r => W3R
-
         public static void First4CharsLowercaseLastUppercase()
         {
             Console.WriteLine("Convert first 4 characters to lowercase and last characters to uppercase: ");
             Console.Write("Input a string: ");
             string input = Console.ReadLine();
+
+            // Checks the length of the string
             if (input.Length < 4)
             {
+                // Converts the entire string to uppercase
                 string result = input.ToUpper();
                 Console.WriteLine("Resulting string: " + result);
             }
             else
             {
+                // Splits the string into two parts and converts accordingly
                 string firstPart = input.Substring(0, 4).ToLower();
                 string lastPart = input.Substring(4).ToUpper();
                 string result = firstPart + lastPart;
+
+                // Displays the resulting string
                 Console.WriteLine("Resulting string: " + result);
             }
         }

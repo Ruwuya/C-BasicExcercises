@@ -19,10 +19,13 @@ namespace C_BasicExcercises.Exercises.Exercise51_60
 
             int sum = 0;
 
+            // Sum elements column-wise, stopping at zeros
             for (int j = 0; j < cols; j++)
             {
+                // Check each element in the column
                 for (int i = 0; i < rows; i++)
                 {
+                    // If a zero is encountered, stop adding further down this column
                     if (matrix[i, j] == 0)
                         break; // Stop adding further down this column
 

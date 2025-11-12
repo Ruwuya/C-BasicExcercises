@@ -13,10 +13,15 @@ namespace C_BasicExcercises.Exercises.Exercise41_50
         public static void FirstOrLastElementEqualInTwoArrays()
         {
             Console.WriteLine("Check if the first or last elements of two arrays are equal: ");
+
             int[] array1 = { 1, 2, 2, 3, 3, 4, 5, 6, 5, 7, 7, 7, 8, 8, 1 };
             int[] array2 = { 1, 2, 2, 3, 3, 4, 5, 6, 5, 7, 7, 7, 8, 8, 5 };
+
+            // Display the arrays
             Console.WriteLine("First array: [" + string.Join(", ", array1) + "]");
             Console.WriteLine("Second array: [" + string.Join(", ", array2) + "]");
+
+            // Check if the first or last elements are equal
             bool isEqual = (array1[0] == array2[0]) || (array1[array1.Length - 1] == array2[array2.Length - 1]);
             Console.WriteLine("Result: " + isEqual);
         }

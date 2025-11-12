@@ -17,12 +17,15 @@ namespace C_BasicExcercises.Exercises.Exercise21_30
             Console.WriteLine("Check Within 20 of 100 or 200 Exercise");
             Console.WriteLine("Please enter an integer:");
             int number = int.Parse(Console.ReadLine());
+            // Check if the number is within 20 of 100 or 200
             if (Math.Abs(100 - number) <= 20 || Math.Abs(200 - number) <= 20)
             {
+                // Output true if it is
                 Console.WriteLine("True");
             }
             else
             {
+                // Output false if it is not
                 Console.WriteLine("False");
             }
         }

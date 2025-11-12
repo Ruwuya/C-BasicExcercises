@@ -17,10 +17,12 @@ namespace C_BasicExcercises.Exercises
             double numerator = double.Parse(Console.ReadLine());
             Console.WriteLine("Please enter the denominator:");
             double denominator = double.Parse(Console.ReadLine());
+            // Checking for division by zero
             if (denominator == 0)
             {
                 Console.WriteLine("Error: Division by zero is not allowed.");
             }
+            // Performing the division and printing the result
             else
             {
                 double result = numerator / denominator;

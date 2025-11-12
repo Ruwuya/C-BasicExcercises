@@ -18,12 +18,15 @@ namespace C_BasicExcercises.Exercises.Exercise11_20
             Console.WriteLine("Please enter the second integer:");
             int secondNumber = int.Parse(Console.ReadLine());
             int result;
+            // Check if the numbers are the same
             if (firstNumber == secondNumber)
             {
+                // Calculate triple the sum if they are the same
                 result = 3 * (firstNumber + secondNumber);
             }
             else
             {
+                // Calculate the sum if they are different
                 result = firstNumber + secondNumber;
             }
             Console.WriteLine("The result is: " + result);

@@ -13,8 +13,10 @@ namespace C_BasicExcercises.Exercises.Exercise21_30
         {
             Console.WriteLine("Exercise 23: Convert a given string to lowercase.");
             Console.Write("Enter a string: ");
+            // Read input from the user and convert it to lowercase
             string input = Console.ReadLine() ?? string.Empty;
             string lowercasedString = input.ToLower();
+            // Display the result
             Console.WriteLine($"Lowercase string: {lowercasedString}");
         }
     }

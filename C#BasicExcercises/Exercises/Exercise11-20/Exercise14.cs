@@ -15,6 +15,7 @@ namespace C_BasicExcercises.Exercises.Exercise11_20
             Console.WriteLine("Convert Celsius to Fahrenheit Exercise");
             Console.WriteLine("Please enter temperature in Celsius:");
             double celsius = double.Parse(Console.ReadLine());
+            // Conversion
             double fahrenheit = (celsius * 1.8) + 32;
             Console.WriteLine($"{celsius} degree Celsius is equal to {fahrenheit} degree Fahrenheit.");
         }

@@ -15,16 +15,21 @@ namespace C_BasicExcercises.Exercises.Exercise11_20
             // For example, (5, -3) is a positive and negative pair, while (4, 2) and (-1, -6) are not.
             // Takes user input and checks if the pair is a positive and negative pair.
             Console.WriteLine("Check Positive and Negative Pair Exercise");
+            // Get first integer from user
             Console.WriteLine("Please enter the first integer:");
             int firstNumber = int.Parse(Console.ReadLine());
+            // Get second integer from user
             Console.WriteLine("Please enter the second integer:");
             int secondNumber = int.Parse(Console.ReadLine());
+            // Check if the pair is a positive and negative pair
             if ((firstNumber < 0 && secondNumber > 0) || (firstNumber > 0 && secondNumber < 0))
             {
+                // Output result if it is a positive and negative pair
                 Console.WriteLine("The pair has a positive and negative pair.");
             }
             else
             {
+                // Output result if it is not a positive and negative pair
                 Console.WriteLine("The pair is not a positive and negative pair.");
             }
         }

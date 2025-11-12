@@ -9,15 +9,17 @@ namespace C_BasicExcercises.Exercises.Exercise41_50
     public class Exercise47
     {
         // Sum of Array Element
-
         public static void SumOfArrayElement()
         {
             Console.WriteLine("Sum of array elements: ");
             int[] numbers = { 1, 2, 2, 3, 3, 4, 5, 6, 5, 7, 7, 7, 8, 8, 1 }; // Example array
             int sum = 0;
+
+            // Iterate through each element in the array and calculate the sum
             foreach (int number in numbers)
             {
-                sum += number; // Add each element to sum
+                // Add each element to sum
+                sum += number; 
             }
             Console.WriteLine("The sum of the array elements is: " + sum);
         }

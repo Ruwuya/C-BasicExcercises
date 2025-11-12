@@ -18,13 +18,18 @@ namespace C_BasicExcercises.Exercises.Exercise51_60
             int[] array = { 1, 3, 4, 7, 9 };
             int min = array.Min();
             int max = array.Max();
+
             // Using HashSet for O(1) lookups
             HashSet<int> numbersSet = new HashSet<int>(array);
             int missingCount = 0;
+
             // Printing the array
             Console.WriteLine("The given array is: " + string.Join(", ", array));
+
+            // Counting missing numbers in the range
             for (int i = min; i <= max; i++)
             {
+                // If the number is not in the set, it's missing
                 if (!numbersSet.Contains(i))
                 {
                     missingCount++;

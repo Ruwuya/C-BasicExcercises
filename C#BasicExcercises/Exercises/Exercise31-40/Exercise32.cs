@@ -9,17 +9,20 @@ namespace C_BasicExcercises.Exercises.Exercise31_40
     public class Exercise32
     {
         // Four copies of the last four characters
-
         public static void FourCopiesOfLastFourCharacters()
         {
+            // Prompt the user for input
             Console.WriteLine("Four copies of the last four characters: ");
             Console.Write("Input a string: ");
             string input = Console.ReadLine();
+
+            // Validate input length
             if (input.Length < 4)
             {
                 Console.WriteLine("Input string must be at least 4 characters long.");
                 return;
             }
+            // Extract the last four characters then repeat them four times
             string lastFour = input.Substring(input.Length - 4);
             string result = string.Concat(Enumerable.Repeat(lastFour, 4));
             Console.WriteLine("Resulting string: " + result);

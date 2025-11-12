@@ -11,6 +11,7 @@ namespace C_BasicExcercises.Exercises.Exercise_11_20
         // Print Age message
         public static void PrintAgeMessage()
         {
+            // Asking user for their age and printing a message
             Console.WriteLine("Print Age Message Exercise");
             Console.WriteLine("Please enter your age:");
             int age = int.Parse(Console.ReadLine());

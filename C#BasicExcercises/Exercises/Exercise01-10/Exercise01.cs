@@ -11,7 +11,7 @@ namespace C_BasicExcercises.Exercises
         // Prints Hello and the string you wrote in
         public static void HelloName()
         {
-            Console.WriteLine("This is ExerciseHello + name exercise");
+            Console.WriteLine("This is Hello + name exercise");
             Console.WriteLine("Hello");
             Console.WriteLine("Please enter your name");
             string? name = Console.ReadLine();

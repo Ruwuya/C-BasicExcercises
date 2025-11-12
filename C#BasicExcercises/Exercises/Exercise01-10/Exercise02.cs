@@ -11,7 +11,7 @@ namespace C_BasicExcercises.Exercises
         // Sum of two numbers
         public static void SumOfTwoNumbers()
         {
-            // Prints the sum of two numbers entered by the user
+            // Prompting the user to enter two numbers
             Console.WriteLine("Sum of two numbers exercise");
             Console.WriteLine("Please enter first number");
             int firstNumber = int.Parse(Console.ReadLine());
@@ -19,6 +19,7 @@ namespace C_BasicExcercises.Exercises
             Console.WriteLine("Please enter second number");
             int secondNumber = int.Parse(Console.ReadLine());
 
+            // Calculating the sum and printing it to the console
             int sum = firstNumber + secondNumber;
             Console.WriteLine("The sum of " + firstNumber + " and " + secondNumber + " is: " + sum);
         }

@@ -15,13 +15,17 @@ namespace C_BasicExcercises.Exercises.Exercise41_50
             Console.WriteLine("Check if the first and last elements of an array are equal: ");
             int[] array = { 1, 2, 2, 3, 3, 4, 5, 6, 5, 7, 7, 7, 8, 8, 1 };
             Console.WriteLine("Array: [" + string.Join(", ", array) + "]");
+
+            // Check if the first and last elements are equal
             if (array.Length < 1)
             {
                 Console.WriteLine("Array is empty.");
                 return;
             }
+            // Compare first and last elements
             if (array[0] == array[array.Length - 1])
             {
+                // Output the result if they are equal
                 Console.WriteLine("The first and last elements are equal.");
             }
             else

@@ -17,8 +17,10 @@ namespace C_BasicExcercises.Exercises.Exercise21_30
             int firstNumber = int.Parse(Console.ReadLine());
             Console.WriteLine("Please enter the second integer:");
             int secondNumber = int.Parse(Console.ReadLine());
+            // Check the conditions for first number, second number, or their sum being 20
             if (firstNumber == 20 || secondNumber == 20 || (firstNumber + secondNumber) == 20)
             {
+                // Output the result
                 Console.WriteLine("True");
             }
             else

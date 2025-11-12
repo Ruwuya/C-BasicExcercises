@@ -17,6 +17,7 @@ namespace C_BasicExcercises.Exercises
             // 5
             // 12
             // 3
+            // Operations:
             int firstcalculation = -1 + 4 * 6;
             int secondcalculation = (35 + 5) % 7;
             double thirdcalculation = 14 + -4 * 6 / 11.0;
@@ -24,6 +25,7 @@ namespace C_BasicExcercises.Exercises
 
             Console.WriteLine("Expected Results:\n23\n5\n12\n3");
 
+            // Display the results of the calculations
             Console.WriteLine("Result of the specified operations:");
             Console.WriteLine("1. -1 + 4 * 6 = " + firstcalculation);
             Console.WriteLine("2. (35 + 5) % 7 = " + secondcalculation);
